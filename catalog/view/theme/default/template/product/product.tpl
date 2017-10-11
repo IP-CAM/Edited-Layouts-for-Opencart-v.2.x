@@ -125,6 +125,11 @@
           </div>
           <h1><?php echo $heading_title; ?></h1>
           <ul class="list-unstyled">
+			<?php if ($alternative_name) { ?>
+			<li><?php echo $text_alternative_name; ?> <?php echo $alternative_name ?></li>
+			<?php } ?>
+		  </ul>
+          <ul class="list-unstyled">
             <?php if ($manufacturer) { ?>
             <li><?php echo $text_manufacturer; ?> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a></li>
             <?php } ?>

@@ -57,6 +57,14 @@
                       <?php } ?>
                     </div>
                   </div>
+				  
+				  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-alternative-name<?php echo $language['language_id']; ?>"><?php echo $entry_alternative_name; ?></label>
+                    <div class="col-sm-10">
+                      <input type="text" name="product_description[<?php echo $language['language_id']; ?>][alternative_name]" value="<?php echo isset($product_description[$language['language_id']]) ? $product_description[$language['language_id']]['alternative_name'] : ''; ?>" placeholder="<?php echo $entry_alternative_name; ?>" id="input-alternative-name<?php echo $language['language_id']; ?>" class="form-control" />
+                    </div>
+                  </div>
+				  
                   <div class="form-group">
                     <label class="col-sm-2 control-label" for="input-description<?php echo $language['language_id']; ?>"><?php echo $entry_description; ?></label>
                     <div class="col-sm-10">
